@@ -1,5 +1,5 @@
 <template>
-  <h2>头</h2>
+  <div id="head">头</div>
 </template>
 
 <script>
@@ -13,7 +13,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  h2{
+  #head{
+    width: 100%;
     font-weight: 400;
   }
 </style>

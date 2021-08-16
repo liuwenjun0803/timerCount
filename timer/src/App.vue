@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Head/>
-
+    <MajorClock/>
+    <ControlButtons/>
+    <SplitTimes/>
+    <Foot/>
   </div>
 </template>
 
@@ -9,7 +12,7 @@
 import Head from './components/Head.vue'
 import Foot from './components/Foot.vue'
 import MajorClock from './components/MajorClock.vue'
-import ControlButton from './components/ControlButton.vue'
+import ControlButtons from './components/ControlButtons.vue'
 import SplitTimes from './components/SplitTimes.vue'
 export default {
   name: 'App',
@@ -17,7 +20,7 @@ export default {
     Head,
     Foot,
     MajorClock,
-    ControlButton,
+    ControlButtons,
     SplitTimes
   }
 }
@@ -30,12 +33,20 @@ export default {
   box-sizing: border-box;
   list-style: none;
 }
+a{
+  text-decoration: none;
+  color: #7e7e7e;
+}
+html{
+  font-size: 16px;
+  background: rgb(10, 10, 10);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>

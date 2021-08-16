@@ -1,15 +1,24 @@
 <template>
-<div class="box">
+<div id="foot">
     <a href="javascipt:;">
         <img src="../assets/foot-tubiao.png" alt="">
+        闹钟
     </a>
-    <a href="javascipt:;"></a>
-    <a href="javascipt:;"></a>
-    <a href="javascipt:;"></a>
+    <a href="javascipt:;">
+        <img src="../assets/foot-tubiao.png" alt="">
+        闹钟
+    </a>
+    <a href="javascipt:;">
+        <img src="../assets/foot-tubiao.png" alt="">
+        闹钟
+    </a>
+    <a href="javascipt:;">
+        <img src="../assets/foot-tubiao.png" alt="">
+        闹钟
+    </a>
 </div>
 
 </template>
-
 <script>
 export default {
   name: 'Head',
@@ -19,9 +28,18 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  h2{
-    font-weight: 400;
+  #foot{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: #111111;
+    a{
+        display: flex;
+        flex-direction: column;
+    }
   }
 </style>
